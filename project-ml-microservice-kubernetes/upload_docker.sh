@@ -11,9 +11,9 @@ dockerpath="nqthien041292/operationalize-a-machine-learning-microservice-api:lat
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker logout
-docker login
-docker tag operationalize-a-machine-learning-microservice-api $dockerpath
+docker login -u nqthien041292
+docker tag operationalize-a-machine-learning-microservice-api $dockerpath:operationalize-a-machine-learning-microservice-api
 
 # Step 3:
 # Push image to a docker repository
-docker push $dockerpath
+docker push $dockerpath:operationalize-a-machine-learning-microservice-api
