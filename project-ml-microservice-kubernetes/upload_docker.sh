@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath="pawankolhe/projectml:latest"
+dockerpath="nqthien041292/operationalize-a-machine-learning-microservice-api:latest"
 
 # Step 2:  
 # Authenticate & tag
