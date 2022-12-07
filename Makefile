@@ -11,6 +11,8 @@ setup:
 install:
 	pip install --upgrade pip &&\
 		pip install --use-pep517 -r requirements.txt
+	wget -O ./hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64 &&\
+	chmod +x ./hadolint
 
 test:
 	# Additional, optional, tests could go here
@@ -18,7 +20,7 @@ test:
 	#python -m pytest --nbval notebook.ipynb
 
 lint:
-	hadolint Dockerfile
+	./hadolint Dockerfile
 	pylint --disable=R,C,w1309,W1203,E0611,W1202 app.py
 
 all: install lint test
