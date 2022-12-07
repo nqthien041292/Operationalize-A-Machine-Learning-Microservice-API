@@ -1,1 +1,10 @@
-<paste log output from Kubernetes-mediated prediction, here>
+2022-12-07 16:05:15 [2022-12-07 09:05:15,060] INFO in app: JSON payload: 
+2022-12-07 16:05:15 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+2022-12-07 16:05:15 [2022-12-07 09:05:15,069] INFO in app: Inference payload DataFrame: 
+2022-12-07 16:05:15    CHAS     RM    TAX  PTRATIO      B  LSTAT
+2022-12-07 16:05:15 0     0  6.575  296.0     15.3  396.9   4.98
+2022-12-07 16:05:15 [2022-12-07 09:05:15,075] INFO in app: Scaling Payload: 
+2022-12-07 16:05:15    CHAS     RM    TAX  PTRATIO      B  LSTAT
+2022-12-07 16:05:15 0     0  6.575  296.0     15.3  396.9   4.98
+2022-12-07 16:05:15 [2022-12-07 09:05:15,077] INFO in app: output prediction: [20.35373177134412]
+2022-12-07 16:05:15 127.0.0.1 - - [07/Dec/2022 09:05:15] "POST /predict HTTP/1.1" 200 -
